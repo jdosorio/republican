@@ -16,11 +16,14 @@ window.addEventListener("scroll", function () {
 const menuBtn = document.querySelector(".nav-menu-btn");
 const closeBtn = document.querySelector(".nav-close-btn");
 const navigation = document.querySelector(".navigation");
+var disabled = false;
 
 menuBtn.addEventListener("click", () => {
-  navigation.classList.add("active");
-});
-
-closeBtn.addEventListener("click", () => {
-  navigation.classList.remove("active");
+  if (!disabled) {
+    navigation.classList.add("active");
+    disabled = true;
+  } else {
+    navigation.classList.remove("active");
+    disabled = false;
+  }
 });
