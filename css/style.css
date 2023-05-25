@@ -72,7 +72,7 @@ header {
 
 header.sticky {
   height: calc(3.5rem + 2rem);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(0 28 141 / 47%);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -255,9 +255,9 @@ header .nav-bar {
 }
 
 .thumbs-container {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(22, 36, 103, 70%);
   backdrop-filter: blur(10px);
-  padding: 10px 3px;
+  padding: 0px 3px;
   border-radius: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -332,6 +332,10 @@ header .nav-bar {
     padding: 25px 50px;
   }
 
+  .container-custom {
+    padding: 25px 50px !important;
+  }
+
   .media-icons {
     right: 0;
     margin-right: 50px;
@@ -359,6 +363,10 @@ header .nav-bar {
     padding: 25px 20px;
   }
 
+  .container-custom {
+    padding: 25px 20px !important;
+  }
+
   .media-icons {
     margin-right: 20px;
   }
@@ -369,6 +377,11 @@ header .nav-bar {
 
   .swiper-slide .text-content {
     margin: 0 70px 0 20px;
+  }
+
+  .custom-video {
+    max-height: 300px;
+    width: 100%;
   }
 
   .swiper-slide .text-content .title {
@@ -473,4 +486,35 @@ header .nav-bar {
   .about p {
     font-size: 0.9em;
   }
+}
+
+.container-custom {
+  padding: 0 200px;
+  padding-top: 3rem;
+}
+
+.custom-video {
+  height: 300px;
+  width: 100%;
+}
+
+.team {
+  padding: 35px 200px;
+}
+
+.subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
 }
